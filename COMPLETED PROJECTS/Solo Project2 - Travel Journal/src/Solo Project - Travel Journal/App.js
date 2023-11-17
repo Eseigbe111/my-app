@@ -7,16 +7,25 @@ import data from './data'
 export default function App() {
 
     const cards = data.map((item, index) =>{
+        let line
+        if (index !== data.length - 1){
+            line = <hr />
+        } else {
+            line=''  /* or null*/
+        }
+
+
         return(
             
-            <div>
+            <div>            
                 <Card 
                     key={item.id}
                     {...item}
-                    
+                          
                 />
-                {index !==data.length - 1  && <hr />}
+                {line}
             </div>
+
         )
     })
 

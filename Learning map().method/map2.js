@@ -29,7 +29,7 @@ const people = [
 ]
 
 const fullName = people.map(items => items= `${items.first} ${items.last}`)
-console.log(fullName)
+//console.log(fullName)
 
 console.log('*********************************')
 

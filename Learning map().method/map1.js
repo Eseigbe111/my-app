@@ -6,25 +6,25 @@ const mapped = filtered.map(n => `<li>${n}</li>`)
 
 const html = `<ul> ${mapped.join('')} </ul>`
 
-console.log(html)
+//console.log(html)
 console.log('1  *************************************')
 
 const words = ['temple','john','june','sas']
 
 const word = words.map(n => n = n.charAt(0).toUpperCase() + n.slice(1))
 
-console.log(word)
+//console.log(word)
 console.log("2  *************************************")
 
 const digits = [1,2,3,4,5]
 
-dig = digits.map(double)
+dig = digits.map(valueIndex)
 
-function double(value,index) {
+function valueIndex(value,index) {
     return value * index
 }
 
-console.log(dig)
+//console.log(dig)
 console.log('3  ###################################')
 
 let smallwords = ['yours', 'mine', 'you']
@@ -33,7 +33,7 @@ smallwords[i] = smallwords[i][0].toUpperCase() + smallwords[i].slice(1)
 
 }
 
-console.log(smallwords)
+//console.log(smallwords)
 console.log('4  ##################################')
 
 let name = ['yours', 'mine', 'you']
@@ -41,7 +41,7 @@ for (let  i=0; i< name.length; i++) {
     name[i] = name[i][0].toUpperCase() + name[i][1].toUpperCase()  +name[i].substring(2)
 }
 
-console.log(name)
+//console.log(name)
 console.log('5  ##################################')
 
 let nam = ['yours', 'mine', 'you']

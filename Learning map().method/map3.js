@@ -13,14 +13,14 @@ const existingArray = ['decode', 'dom', 'javascript']
 const newArray = existingArray.map(function(value) {
    return value  
 })
-console.log(newArray)
+//console.log(newArray)
 console.log('*********************')
 
 const newAray = existingArray.map(function(value,ind) {
     return `${ind} ${':'} ${value}` 
 })
 
-console.log(newAray)
+//console.log(newAray)
 console.log('*********************')
  
 

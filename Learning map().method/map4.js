@@ -5,9 +5,8 @@
 */ 
 const practice = ['25', '26', '27', '28','29','30']
 
-const newpractice = practice.map(number => ({
-    practice: number * number,
-    newnum: number * 7
-}))
+const newpractice = practice.map(number => (
+     number * number
+))
 console.log(practice)
 console.log(newpractice) 

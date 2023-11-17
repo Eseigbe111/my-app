@@ -16,11 +16,14 @@
 
  const row = [10,20,30,40,50]
  const matrix = row.map(mat => ([mat]))
+
+ console.log(matrix)
+
  const matr = row.map(mat => {
     return [mat]
  })
  console.log(matr)
- console.log(matrix)
+ 
 
  console.log('********** Also the same as thwe above ************')
 
