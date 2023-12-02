@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 4px;
+    margin-left: 4px;     
+}
+
+
+
