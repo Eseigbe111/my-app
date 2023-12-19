@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+.square--box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: inline-block;  /* Use inline-block to allow boxes to display in a line and wrap to the next line */
+    margin-right: 4px;
+    
+}
