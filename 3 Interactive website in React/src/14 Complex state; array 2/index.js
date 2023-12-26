@@ -7,8 +7,8 @@ export default function App() {
     const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
     
     function addItem() {
-    setThingsArray(prevThingsArray => {
-        return [...thingsArray, `Thing ${prevThingsArray.length + 1}`]
+        setThingsArray(prevThingsArray => {
+           return [...thingsArray, `Thing ${prevThingsArray.length + 1}`]
     })
     /* or
     const newThingsArray = [...thingsArray]

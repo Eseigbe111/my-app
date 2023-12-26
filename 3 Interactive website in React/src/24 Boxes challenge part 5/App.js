@@ -7,27 +7,27 @@ import './style.css'
 export default function App() {
     const [squares, setSquares] = React.useState(boxes)
     
-    function toggle(id) {
+    /*function toggle(id) {
        setSquares(prevSquares => 
         prevSquares.map(square => 
             square.id === id? {...square, on: !square.on} : square))
     
-    }
+    }*/
 
     function toggle(id) {
         setSquares(prevSquares => {
-            const newSquaresArray=[] 
-            for (let i = 0; i < prevSquares.length; i++){
+            const newSquareArray =[]
+            for (let i=0; i< prevSquares.length;i++) {
                 let currentSquare = prevSquares[i]
-                if (currentSquare.id === id){
-                    const updatedSquare = {...currentSquare, on:!currentSquare.on}
-                    newSquaresArray.push(updatedSquare)
-                }else{
-
-                    newSquaresArray.push(currentSquare)
+                if (currentSquare.id === id) {
+                    let updatedSquare = {...currentSquare, on:!currentSquare.on}
+                    newSquareArray.push(updatedSquare)
+                } else {
+                    newSquareArray.push(currentSquare)
                 }
+
             }
-            return newSquaresArray
+            return newSquareArray
         })
     }
 

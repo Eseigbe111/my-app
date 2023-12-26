@@ -9,8 +9,9 @@ export default function App() {
     
     function toggle(id) {
        setSquares(prevSquares => 
-        prevSquares.map(square =>
-        square.id === id ? { ...square, on: !square.on } : square))
+        prevSquares.map(square => 
+            square.id === id? 
+            {...square, on: !square.on}: {...square}))
     }
 
         /**
